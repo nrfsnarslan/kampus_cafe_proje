@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampüs Cafe - Etkinlikler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">☕ Kampüs Cafe</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="etkinlikler.html" class="aktif">Etkinlikler</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Etkinlikler</h1>
+        <p>Kampüs Cafe'de düzenlenen etkinlikleri aşağıda bulabilirsiniz. Başlığa göre arama yapabilirsiniz.</p>
+
+        <div class="arama-alani">
+            <label for="arama">Etkinlik ara:</label>
+            <input type="text" id="arama" placeholder="Örneğin: kahve, müzik, kitap...">
+            <button type="button" id="temizle">Temizle</button>
+        </div>
+
+        <p id="sayac">6 etkinlik gösteriliyor</p>
+        <p id="bos-mesaj" class="gizli">Aradığınız başlıkta bir etkinlik bulunamadı.</p>
+
+        <div class="kartlar">
+            <div class="kart">
+                <h2 class="kart-baslik">Latte Art Atölyesi</h2>
+                <p>Baristamız süt köpüğüyle kalp ve yaprak desenlerinin nasıl yapıldığını gösteriyor. Katılanlar kendi lattesini hazırlayıp içebiliyor.</p>
+                <p class="ozel-bilgi"><strong>Kategori:</strong> Atölye | <strong>Zaman:</strong> Salı 15:00</p>
+            </div>
+
+            <div class="kart">
+                <h2 class="kart-baslik">Kitap Kulübü Buluşması</h2>
+                <p>Her ay bir kitap seçiyoruz ve ay sonunda kafede oturup kitap hakkında konuşuyoruz. Bu ayın kitabı: Kürk Mantolu Madonna.</p>
+                <p class="ozel-bilgi"><strong>Kategori:</strong> Sosyal | <strong>Zaman:</strong> Çarşamba 17:30</p>
+            </div>
+
+            <div class="kart">
+                <h2 class="kart-baslik">Akustik Müzik Gecesi</h2>
+                <p>Okulun müzik topluluğundan öğrenciler gitar ve sesle kısa bir akustik konser veriyor. Giriş ücretsiz.</p>
+                <p class="ozel-bilgi"><strong>Kategori:</strong> Müzik | <strong>Zaman:</strong> Perşembe 19:00</p>
+            </div>
+
+            <div class="kart">
+                <h2 class="kart-baslik">Sınav Haftası Çay ve Simit Molası</h2>
+                <p>Final haftasında kütüphaneden çıkan öğrencilere çay ve simit ikram ediyoruz. Biraz mola vermek herkese iyi gelir.</p>
+                <p class="ozel-bilgi"><strong>Kategori:</strong> Kampanya | <strong>Zaman:</strong> Final haftası, her gün 10:00</p>
+            </div>
+
+            <div class="kart">
+                <h2 class="kart-baslik">Kutu Oyunları Turnuvası</h2>
+                <p>Tabu, Uno ve Jenga ile takımlar halinde yarışıyoruz. Kazanan takıma bir haftalık bedava kahve.</p>
+                <p class="ozel-bilgi"><strong>Kategori:</strong> Oyun | <strong>Zaman:</strong> Cuma 16:00</p>
+            </div>
+
+            <div class="kart">
+                <h2 class="kart-baslik">Sessiz Çalışma Saatleri</h2>
+                <p>Sabah saatlerinde kafenin arka bölümü sadece ders çalışmak isteyenlere ayrılıyor. Müzik kapalı, prizler açık.</p>
+                <p class="ozel-bilgi"><strong>Kategori:</strong> Çalışma | <strong>Zaman:</strong> Hafta içi 08:00 - 11:00</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Kampüs Cafe - BPR201 Haftalık Proje Ödevi 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

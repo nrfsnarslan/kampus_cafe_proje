@@ -1,0 +1,247 @@
+/* Genel ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f1ea;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Üst kısım ve menü */
+header {
+    background-color: #5c3d2e;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a.aktif {
+    background-color: #8b5e3c;
+}
+
+/* Klavye ile gezerken nerede olduğumuz görünsün */
+a:focus,
+input:focus,
+button:focus {
+    outline: 3px solid #e0a458;
+    outline-offset: 2px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    color: #5c3d2e;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #5c3d2e;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Ana sayfa */
+.giris {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.hedef {
+    font-style: italic;
+    color: #6b4f3f;
+}
+
+.buton {
+    display: inline-block;
+    background-color: #5c3d2e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.buton:hover {
+    background-color: #8b5e3c;
+}
+
+.bilgi-kutulari {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.kutu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid #8b5e3c;
+}
+
+/* Arama alanı */
+.arama-alani {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.arama-alani label {
+    font-weight: bold;
+}
+
+.arama-alani input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.arama-alani button {
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: #5c3d2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arama-alani button:hover {
+    background-color: #8b5e3c;
+}
+
+#sayac {
+    font-weight: bold;
+    color: #5c3d2e;
+}
+
+#bos-mesaj {
+    background-color: #fde2e2;
+    color: #8a1f1f;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.gizli {
+    display: none;
+}
+
+/* Kartlar */
+.kartlar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.kart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ozel-bilgi {
+    font-size: 14px;
+    color: #6b4f3f;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Hakkında sayfası */
+.yazi {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.yazi ul {
+    margin-left: 20px;
+}
+
+.yazi h2 {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Telefon görünümü */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bilgi-kutulari {
+        grid-template-columns: 1fr;
+    }
+
+    .kartlar {
+        grid-template-columns: 1fr;
+    }
+
+    .giris,
+    .yazi {
+        padding: 20px;
+    }
+
+    .arama-alani input {
+        flex-basis: 100%;
+    }
+}
